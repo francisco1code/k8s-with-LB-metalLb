@@ -11,8 +11,8 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox"
   config.vm.provider :virtualbox do |v|
     v.gui = false
-    v.cpus = 4
-    v.memory = 4096
+    v.cpus = 3
+    v.memory = 3096
   end
 
   config.vm.provision "shell", inline: $script
